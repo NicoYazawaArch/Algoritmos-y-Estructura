@@ -1,0 +1,14 @@
+# Compilados y binarios
+*.o
+*.out
+*.exe
+*.obj
+
+# Carpetas de VS Code y archivos de sistema
+.vscode/
+.DS_Store
+*.log
+
+# Si usas CMake o Makefile
+build/
+bin/
