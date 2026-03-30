@@ -32,14 +32,15 @@ int main() {
     // Verificación sin anidaciones (100 vueltas)
     // Usamos 'k' para recorrer todas las combinaciones posibles (10x10)
     for (int k = 0; k < 100; k++) {
+        // i representa la "fila" (primer operando): se obtiene mediante la división entera
         int i = k / 10; // Esto nos da el primer índice (0,0,0... 1,1,1...)
+        // j representa la "columna" (segundo operando): se obtiene mediante el resto (módulo)
         int j = k % 10; // Esto nos da el segundo índice (0,1,2... 0,1,2...)
         //Funcionaria como buscar en una matriz
-        // Un solo IF simple usando && (Y lógico)
         // Condición: Que i sea menor que j (para no compararse consigo mismo)
         // Y que los valores en esas posiciones sean iguales.
         if (i < j && arreglo[i] == arreglo[j]) {//Se crean 2 arrays virtuales, uno con i y otro con j, y se comparan entre sí. Si i es menor que j, se compara el valor en la posición i con el valor en la posición j. Si son iguales, significa que hay un número repetido.
-            coincidencias = coincidencias + 1;
+            coincidencias++;   //coincidencias = coincidencias + 1;
         }
     }
  // Resultados finales
