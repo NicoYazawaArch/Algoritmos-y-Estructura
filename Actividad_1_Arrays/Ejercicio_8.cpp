@@ -62,7 +62,6 @@ int main() {
             //El for se incrementa de a 2 para saltar las posiciones pares y solo imprimir las impares
             cout<<arreglo[i]<<" ";
         }
-
     }
 
     else{
@@ -71,7 +70,6 @@ int main() {
             //El for se incrementa de a 2 para saltar las posiciones impares y solo imprimir las pares
             cout<<arreglo[i]<<" ";
         }
-
     }
 
     cout << endl;
