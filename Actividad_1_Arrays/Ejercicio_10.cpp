@@ -39,7 +39,9 @@ int main() {
         //Funcionaria como buscar en una matriz
         // Condición: Que i sea menor que j (para no compararse consigo mismo)
         // Y que los valores en esas posiciones sean iguales.
-        if (i < j && arreglo[i] == arreglo[j]) {//Se crean 2 arrays virtuales, uno con i y otro con j, y se comparan entre sí. Si i es menor que j, se compara el valor en la posición i con el valor en la posición j. Si son iguales, significa que hay un número repetido.
+        if (i < j && arreglo[i] == arreglo[j]) {//Se crean 2 arrays virtuales, uno con i y otro con j, y se comparan entre sí. 
+            //Si i es menor que j, se compara el valor en la posición i con el valor en la posición j. 
+            //Si son iguales, significa que hay un número repetido.
             coincidencias++;   //coincidencias = coincidencias + 1;
         }
     }

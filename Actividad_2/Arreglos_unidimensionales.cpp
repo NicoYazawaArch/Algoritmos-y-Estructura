@@ -131,7 +131,7 @@ int main(){
         }
         
         if (op2 == 1) cout << "\n-- Tiempos de la semana --\n";
-        if (op2 == 1 && tiempos[0] != -1) cout << "Dia 1: " << tiempos[0] << " minutos\n";
+        if (op2 == 1 && tiempos[0] != -1) cout << "Dia 1: " << tiempos[0] << " minutos\n";//cambiar con un for ^
         if (op2 == 1 && tiempos[1] != -1) cout << "Dia 2: " << tiempos[1] << " minutos\n";
         if (op2 == 1 && tiempos[2] != -1) cout << "Dia 3: " << tiempos[2] << " minutos\n";
         if (op2 == 1 && tiempos[3] != -1) cout << "Dia 4: " << tiempos[3] << " minutos\n";
@@ -187,6 +187,6 @@ int main(){
             opcion = 0;
         }
     }
-
+//Donde hay muchos if sucesivos evaluar cambiar a for <---
     return 0;
 }
