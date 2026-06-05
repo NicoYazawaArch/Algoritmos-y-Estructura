@@ -16,12 +16,12 @@ void mostrarCiclistasPrimerPuesto(float tiempos[30][5], unsigned short int total
     float tiemposTotales[30] ,tiempoGanador=0.0,sumarFila=0.0;
     for (unsigned short int i=0;i<totalInscriptos;i++){
         for(int j=0;j<5;j++){
-            sumaFila+=tiempos[i][j];
+            sumarFila+=tiempos[i][j];
         }
-        tiempoTotales[i]=sumaFila;
+        tiemposTotales[i]=sumarFila;
 
-        if(i==0||sumaFila<tiempoGanador){
-            tiempoGanador=sumaFila;
+        if(i==0||sumarFila<tiempoGanador){
+            tiempoGanador=sumarFila;
         }
     }
     cout << "Ciclistas en primer puesto (Tiempo: " << tiempoGanador << " min):" << endl;

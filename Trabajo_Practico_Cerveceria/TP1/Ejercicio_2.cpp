@@ -13,7 +13,7 @@ int buscarCiclista(const int dnis[], int cantInscriptos, int dniBuscado) {
     
     for (int i = 0; i < cantInscriptos; i = i + 1) {
         if (dnis[i] == dniBuscado) {
-            indice = i;
+            indice = i; 
         }
     }
     return indice;
