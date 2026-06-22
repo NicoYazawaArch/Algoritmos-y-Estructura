@@ -40,7 +40,7 @@ void ingresarEstudiantes(Estudiante curso[], int &cantidadActual) {
         cin.ignore(); 
 
         // 2. Validar Apellido No vacío
-        bool apellid0oValido = false;
+        bool apellidoValido = false;
         while (apellidoValido==false) {
             cout << "Ingrese el Apellido: ";
             cin.getline(curso[cantidadActual].apellido, 50); 
